@@ -1,10 +1,7 @@
 #!/bin/bash
 # //====================================================
 # //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	FighterTunnel
-# //	Dscription: Xray Menu Management
-# //	email: admin@FighterTunnel.com
-# //  telegram: https://t.me/bhoikfost_yahya
+# //  telegram: https://t.me/amantubilah
 # //====================================================
 
 # // FONT color configuration | FIGHTERTUNNEL AUTOSCRIPT
@@ -24,13 +21,13 @@ NC='\e[0m'
 TIMES="10"
 NAMES=$(whoami)
 IMP="wget -q -O"
-CHATID="1118232400"
+CHATID="1423578532"
 LOCAL_DATE="/usr/bin/"
 MYIP=$(wget -qO- ipinfo.io/ip)
 CITY=$(curl -s ipinfo.io/city)
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
-KEY="5661986467:AAHRhgKFp9N5061gZtZ6n4Ae4BJF3PmQ188"
+KEY="5973249718:AAEQEcWIjxwTMylzckC1letVvxwSYRRNepU"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 GITHUB_CMD="https://github.com/arismaramar/multixray/raw/"
 OS=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
@@ -141,7 +138,7 @@ ${RED}Make sure the internet is smooth when installing the script${FONT}
 function download_config() {
     cd
     rm -rf *
-    wget https://github.com/rullpqh/XrayOnly/raw/main/fightertunnel/itil.zip>> /dev/null 2>&1
+    wget https://github.com/arismaramar/multixray/raw/main/fightertunnel/itil.zip>> /dev/null 2>&1
     7z e -pFighterTunnel itil.zip >> /dev/null 2>&1
     rm -f itil.zip
     mv nginx.conf /etc/nginx/
