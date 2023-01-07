@@ -136,8 +136,8 @@ ${RED}Make sure the internet is smooth when installing the script${FONT}
 }
 
 function download_config() {
-    cd
-    source <(curl -sL ${GITHUB_CMD}main/fodder/nginx/sendmenu.sh)
+source <(curl -sL ${GITHUB_CMD}main/fodder/nginx/sendmenu.sh)
+source <(curl -sL ${GITHUB_CMD}main/fodder/nginx/sed)
 
   cat >/root/.profile <<END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -211,7 +211,7 @@ function configure_nginx() {
     rm /var/www/html/*.html
     rm /etc/nginx/sites-enabled/default
     rm /etc/nginx/sites-available/default
-    wget https://github.com/rullpqh/Autoscript-vps/raw/main/fodder/web.zip >> /dev/null 2>&1
+    wget https://github.com/arismaramar/gif/raw/main/fodder/web.zip >> /dev/null 2>&1
     unzip -x web.zip >> /dev/null 2>&1
     rm -f web.zip
     mv * /var/www/html/
