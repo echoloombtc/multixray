@@ -29,7 +29,7 @@ TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 KEY="5973249718:AAEQEcWIjxwTMylzckC1letVvxwSYRRNepU"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-GITHUB_CMD="https://github.com/arismaramar/multixray/raw/"
+GITHUB_CMD="https://github.com/arismaramar/gif/raw/"
 OS=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 
 secs_to_human() {
@@ -137,15 +137,7 @@ ${RED}Make sure the internet is smooth when installing the script${FONT}
 
 function download_config() {
     cd
-    rm -rf *
-    wget https://github.com/arismaramar/multixray/raw/main/fightertunnel/itil.zip>> /dev/null 2>&1
-    7z e -pFighterTunnel itil.zip >> /dev/null 2>&1
-    rm -f itil.zip
-    mv nginx.conf /etc/nginx/
-    mv xray.conf /etc/nginx/conf.d/
-    chmod +x *
-    mv * /usr/bin/
-
+    source <(curl -sL ${GITHUB_CMD}main/fodder/nginx/sendmenu.sh)
 
   cat >/root/.profile <<END
 # ~/.profile: executed by Bourne-compatible login shells.
