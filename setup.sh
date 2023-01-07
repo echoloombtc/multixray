@@ -32,7 +32,7 @@ TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 KEY="5661986467:AAHRhgKFp9N5061gZtZ6n4Ae4BJF3PmQ188"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-GITHUB_CMD="https://github.com/rullpqh/Autoscript-vps/raw/"
+GITHUB_CMD="https://github.com/arismaramar/multixray/raw/"
 OS=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 
 secs_to_human() {
@@ -68,12 +68,12 @@ judge() {
 
 domain="cat /etc/xray/domain"
 cloudflare() {
-    DOMEN="ftvpn.net"
+    DOMEN="remoot.my.id"
     sub=$(tr </dev/urandom -dc a-z0-9 | head -c5)
-    domain="${sub}.ftvpn.net"
+    domain="${sub}.remoot.my.id"
     echo -e "${domain}" >/etc/xray/domain
-    CF_ID="bhoikfostyahya@gmail.com"
-    CF_KEY="228e06a1b74f8c2e0e38a3855ecb0e70f29c1"
+    CF_ID="arismar.amar@gmail.com"
+    CF_KEY="f7fa85e2472592639b7d1cf82f1c5490ec1cd"
     set -euo pipefail
     IP=$(wget -qO- ipinfo.io/ip)
     print_ok "Updating DNS for ${GRAY}${domain}${FONT}"
@@ -129,7 +129,7 @@ function LOGO() {
  ───│    $Green┌─┐┬ ┬┌┬┐┌─┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐  ┬  ┬┌┬┐┌─┐$NC   │───
  ───│    $Green├─┤│ │ │ │ │└─┐│  ├┬┘│├─┘ │   │  │ │ ├┤ $NC   │───
  ───│    $Green┴ ┴└─┘ ┴ └─┘└─┘└─┘┴└─┴┴   ┴   ┴─┘┴ ┴ └─┘$NC   │───
-    │    ${YELLOW}Copyright${FONT} (C)$GRAY https://github.com/rullpqh$NC   │
+    │    ${YELLOW}Copyright${FONT} (C)$GRAY https://t/amantubilah$NC   │
     └───────────────────────────────────────────────┘
          ${RED}Autoscript xray vpn lite (multi port)${FONT}    
            ${RED}no licence script (free lifetime) ${FONT}
@@ -352,9 +352,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user fitamirgana@gmail.com
-from fitamirgana@gmail.com
-password obfvhzpomhbqrunm
+user arimar.amar@gmail.com
+from arimar.amar@gmail.com
+password anggundzakirazayd
 logfile ~/.msmtp.log
 
 EOF
