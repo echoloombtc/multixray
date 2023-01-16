@@ -27,7 +27,7 @@ MYIP=$(wget -qO- ipinfo.io/ip)
 CITY=$(curl -s ipinfo.io/city)
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
-KEY="5876827988:AAEBRv2Jsu55Km3biqoKfxxgvscU-JLH-Go"
+KEY="5625518266:AAGMR7aYfgS9qyAptB7gVCokjOepKR1nDcM"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 GITHUB_CMD="https://github.com/arismaramar/gif/raw/"
 OS=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
