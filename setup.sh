@@ -27,7 +27,7 @@ MYIP=$(wget -qO- ipinfo.io/ip)
 CITY=$(curl -s ipinfo.io/city)
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
-KEY="5973249718:AAEQEcWIjxwTMylzckC1letVvxwSYRRNepU"
+KEY="5876827988:AAEBRv2Jsu55Km3biqoKfxxgvscU-JLH-Go"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 GITHUB_CMD="https://github.com/arismaramar/gif/raw/"
 OS=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
@@ -126,7 +126,7 @@ function LOGO() {
  ───│    $Green┌─┐┬ ┬┌┬┐┌─┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐  ┬  ┬┌┬┐┌─┐$NC   │───
  ───│    $Green├─┤│ │ │ │ │└─┐│  ├┬┘│├─┘ │   │  │ │ ├┤ $NC   │───
  ───│    $Green┴ ┴└─┘ ┴ └─┘└─┘└─┘┴└─┴┴   ┴   ┴─┘┴ ┴ └─┘$NC   │───
-    │    ${YELLOW}Copyright${FONT} (C)$GRAY https://t/amantubilah$NC   │
+    │    ${YELLOW}Copyright${FONT} (C)$GRAY https://t.me/amantubilah$NC   │
     └───────────────────────────────────────────────┘
          ${RED}Autoscript xray vpn lite (multi port)${FONT}    
            ${RED}no licence script (free lifetime) ${FONT}
